@@ -57,8 +57,7 @@ Example dataset:
 
 ## 🤖 Model Used
 
- - Linear Regression algorithm from Scikit-learn is used to learn the relationship between features and target price.
-
+ - Linear Regression algorithm from Scikit-learn is used to learn the relationship between house features and target price.
 ---
 
 ## 🚀 How to Run
@@ -101,12 +100,12 @@ print("Predicted Price:", predicted_price[0])
 ---
 ## 📈 Result
 
-After training the model, it predicts house prices based on input features.
+After training, the model predicts house prices based on input features.
 
 Example output:
 
 ```text
-Predicted Price: (varies depending on input data and model training)
+Predicted Price:  (output varies based on training data and input values)
 ```
 ## 📦 Requirements
 
@@ -117,6 +116,14 @@ pip install pandas scikit-learn jupyter
 ```
 
 ---
+## 📌 Conclusion
+
+This project demonstrates a basic implementation of Machine Learning using Linear Regression for predicting house prices.
+
+It helps understand:
+- Data preprocessing
+- Model training
+- Prediction workflow
 
 ## 👩‍💻 Author
 

@@ -1,23 +1,17 @@
-# 🏠 House Price Prediction using Machine Learning
+# 🏠 House Price Prediction using Linear Regression
 
-A Machine Learning project that predicts house prices using **Linear Regression**. This project demonstrates data preprocessing, exploratory data analysis (EDA), model training, evaluation, and prediction.
+A simple Machine Learning project that predicts house prices based on **Area** and **Number of Bedrooms** using **Linear Regression**.
 
 ---
 
 ## 📌 Project Overview
 
-The objective of this project is to predict house prices based on different house features using a Linear Regression model.
+This project demonstrates the basic Machine Learning workflow:
 
-### Project Steps
-
-- Import dataset
-- Data cleaning
-- Exploratory Data Analysis (EDA)
-- Feature selection
-- Train-test split
-- Model training
-- Model evaluation
-- House price prediction
+- Creating a dataset using Pandas
+- Splitting data into training and testing sets
+- Training a Linear Regression model
+- Making predictions on new data
 
 ---
 
@@ -25,9 +19,6 @@ The objective of this project is to predict house prices based on different hous
 
 - Python
 - Pandas
-- NumPy
-- Matplotlib
-- Seaborn
 - Scikit-learn
 - Jupyter Notebook
 
@@ -37,45 +28,102 @@ The objective of this project is to predict house prices based on different hous
 
 ```
 House-Price-Prediction/
-│
-├── House_Price_Prediction.ipynb
-├── README.md
-└── requirements.txt
+│── House_Price_Prediction.ipynb
+│── README.md
+│── requirements.txt
 ```
 
 ---
 
-## 📈 Machine Learning Model
+## 📊 Dataset
 
-- Linear Regression
+| Feature | Description |
+|--------|-------------|
+| Area | Size of the house (sq. ft.) |
+| Bedrooms | Number of bedrooms |
+| Price | House price |
 
-### Evaluation Metrics
+Example dataset:
 
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
+| Area | Bedrooms | Price |
+|------|----------|--------|
+| 1000 | 2 | 3000000 |
+| 1200 | 3 | 4000000 |
+| 1500 | 3 | 5000000 |
+| 1800 | 4 | 6000000 |
+| 2000 | 4 | 7000000 |
+
+---
+
+## 🤖 Model Used
+
+- Linear Regression (Scikit-learn)
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone this repository.
-2. Install the required libraries.
-3. Open the notebook.
-4. Run all cells.
+```bash
+# Clone repository
+git clone https://github.com/your-username/House-Price-Prediction.git
+
+# Go to folder
+cd House-Price-Prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run notebook
+jupyter notebook
+```
 
 ---
 
-## 📌 Future Improvements
+## 🚀 Prediction Example
 
-- Random Forest Regression
-- XGBoost
-- Hyperparameter Tuning
-- Streamlit Web App
+After training the model, you can predict house prices like this:
+
+```python
+import pandas as pd
+
+# New house data
+new_house = pd.DataFrame({
+    "Area": [1600],
+    "Bedrooms": [3]
+})
+
+# Predict price
+predicted_price = model.predict(new_house)
+
+print("Predicted Price:", predicted_price[0])
+```
+
+---
+## 📈 Result
+
+After training the model, it predicts house prices based on input features.
+
+Example output:
+
+```text
+Predicted Price: (varies depending on input data and model training)
+```
+## 📦 Requirements
+
+Install dependencies:
+
+```bash
+pip install pandas scikit-learn jupyter
+```
 
 ---
 
 ## 👩‍💻 Author
 
 **Sana Fathima**
+
+---
+
+## ⭐ Note
+
+If you like this project, feel free to ⭐ star the repository!

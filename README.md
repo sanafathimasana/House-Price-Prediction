@@ -57,7 +57,7 @@ Example dataset:
 
 ## 🤖 Model Used
 
-- Linear Regression (Scikit-learn)
+ - Linear Regression algorithm from Scikit-learn is used to learn the relationship between features and target price.
 
 ---
 
